@@ -2,11 +2,10 @@ package functions;
 
 import java.util.Scanner;
 
-public class PrimeNumber {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter a number : ");
-        int n = s.nextInt();
+public class PrimeNumber{
+    public PrimeNumber(Integer n){
+        //Scanner s = new Scanner(System.in);
+        //System.out.print("Enter a number : ");
         if (isPrime(n)) {
             System.out.println(n + "True");
         } else {
@@ -25,5 +24,6 @@ public class PrimeNumber {
         }
         return true;
     }
+
 }
 

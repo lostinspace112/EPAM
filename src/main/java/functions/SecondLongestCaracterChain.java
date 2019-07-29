@@ -4,7 +4,7 @@ public class SecondLongestCaracterChain {
     static final int NO_OF_CHARS = 256;
 
 
-    static char getSecondMostFreq(String str)
+    public static char getSecondMostFreq(String str)
     {
         int[] count = new int[NO_OF_CHARS];
         int i;
@@ -28,15 +28,5 @@ public class SecondLongestCaracterChain {
         return (char)second;
     }
 
-    public static void main(String args[])
-    {
-        String str = "aabbbcwwww";
-        char res = getSecondMostFreq(str);
-        if (res != '\0')
-            System.out.println(res);
-        else
-            System.out.println("No second most frequent"+
-                    "character");
-    }
 }
 
