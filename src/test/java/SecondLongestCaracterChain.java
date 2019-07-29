@@ -16,4 +16,15 @@ public class SecondLongestCaracterChain {
                     "character");
     }
 
+    @Test
+    public void name() {
+        final functions.SecondLongestCaracterChain secondLongestCaracterChain = new functions.SecondLongestCaracterChain();
+
+        //final int result = secondLongestCaracterChain.doStuff("aaabbbbcccsssss");
+        final int result = secondLongestCaracterChain.doStuff(null);
+
+
+
+        System.out.println(result);
+    }
 }
