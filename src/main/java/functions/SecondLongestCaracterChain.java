@@ -71,7 +71,7 @@ public class SecondLongestCaracterChain {
 
         @Override
         public int compareTo(StringPositionWithCount o) {
-            if (count <= o.count) {
+            if (count < o.count) {
                 return 1;
             } else {
                 return -1;
