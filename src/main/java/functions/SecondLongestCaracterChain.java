@@ -7,34 +7,8 @@ import java.util.List;
 import static com.google.common.base.Strings.isNullOrEmpty;
 
 public class SecondLongestCaracterChain {
-    final int NO_OF_CHARS = 256;
 
-
-    public  char getSecondMostFreq(String str)
-    {
-        int[] count = new int[NO_OF_CHARS];
-        int i;
-        for (i=0; i< str.length(); i++)
-            (count[str.charAt(i)])++;
-
-        int first = 0, second = 0;
-        for (i = 0; i < NO_OF_CHARS; i++)
-        {
-            if (count[i] > count[first])
-            {
-                second = first;
-                first = i;
-            }
-
-            else if (count[i] > count[second] &&
-                    count[i] != count[first])
-                second = i;
-        }
-
-        return (char)second;
-    }
-
-    public int doStuff(String str) {
+    public int caracterChecker(String str) {
 
         if (isNullOrEmpty(str)) {
             return 0;
@@ -86,7 +60,7 @@ public class SecondLongestCaracterChain {
         return stringPositionWithCounts.get(1).count;
     }
 
-    private class StringPositionWithCount implements Comparable<StringPositionWithCount>{
+    private class StringPositionWithCount implements Comparable<StringPositionWithCount> {
         int position;
         int count;
 
@@ -104,6 +78,5 @@ public class SecondLongestCaracterChain {
             }
         }
     }
-
 }
 
