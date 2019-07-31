@@ -65,7 +65,6 @@ public class SecondLongestCharacterChain {
                 return currentCount;
             }
         }
-
         return stringPositionWithCounts.get(1).count;
     }
 
